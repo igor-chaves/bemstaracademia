@@ -3,6 +3,9 @@ import { ImagesSliderDemo } from "@/components/ui/Hero"
 import { AnimatedTestimonials } from "@/components/ui/Testimonials"
 import Footer from "@/components/ui/Footer"
 import Contact from "@/components/ui/Contact"
+import { FocusCards } from "@/components/ui/focus-cards"
+import { FocusCardsDemo } from "@/components/ui/CardsFocus"
+import Features from "@/components/ui/Features"
 
 export default function Home() {
 	const imgsData: string[] = ["./img1.jpg", "./img2.jpg"]
@@ -32,9 +35,11 @@ export default function Home() {
 	]
 
 	return (
-		<div className="max-w-[1280px] w-full mx-auto">
+		<div className="max-w-[1280px] w-full mx-auto flex flex-col gap-28">
 			<Navbar />
 			<ImagesSliderDemo />
+			<Features />
+			<FocusCardsDemo />
 			<AnimatedTestimonials testimonials={testimonialsData} />
 			<Contact />
 			<Footer />
