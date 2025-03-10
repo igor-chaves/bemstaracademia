@@ -13,21 +13,21 @@ export default function Home() {
 				"A natação me ajudou muito a melhorar minha resistência e a perder peso. Estou me sentindo muito mais saudável!",
 			name: "John Doe",
 			designation: "Aluno, Academia de Natação",
-			src: "/test1.png",
+			src: "/cliente1.avif",
 		},
 		{
 			quote:
 				"Os treinos são desafiadores, mas os resultados são incríveis! A evolução que tive é visível e me motiva cada vez mais.",
 			name: "Jane Smith",
 			designation: "Aluna, Academia de Natação",
-			src: "/test2.png",
+			src: "/cliente2.avif",
 		},
 		{
 			quote:
 				"A experiência de treinar aqui tem sido fantástica. As aulas são muito bem estruturadas, e os instrutores são ótimos!",
 			name: "Alice Johnson",
 			designation: "Aluna, Academia de Natação",
-			src: "/test3.png",
+			src: "/cliente3.avif",
 		},
 	]
 
