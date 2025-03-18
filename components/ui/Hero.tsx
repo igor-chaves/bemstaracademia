@@ -28,7 +28,9 @@ export function ImagesSliderDemo() {
 					href="#contato"
 					className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative lg:mt-4 md:mt-2 mt-0"
 				>
-					<span id="contact" className="lg:text-2xl md:text-xl text-xs">Agende sua visita →</span>
+					<span id="contact" className="lg:text-2xl md:text-xl text-xs">
+						Agende sua visita →
+					</span>
 					<div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
 				</Link>
 			</motion.div>

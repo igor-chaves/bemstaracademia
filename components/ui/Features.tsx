@@ -1,6 +1,6 @@
 const Features = () => {
 	return (
-		<section className="bg-white dark:bg-gray-900">
+		<section className="bg-gray-200">
 			<div className="container px-6 py-12 mx-auto">
 				<div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 					<div>
@@ -19,11 +19,11 @@ const Features = () => {
 							/>
 						</svg>
 
-						<h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+						<h1 className="mt-4 text-xl font-semibold text-gray-800">
 							Profissionais altamente capacitados
 						</h1>
 
-						<p className="mt-2 text-gray-500 dark:text-gray-400">
+						<p className="mt-2 text-gray-400">
 							Treine com os melhores: nossa equipe é formada por especialistas
 							prontos para ajudá-lo a alcançar seus objetivos.{" "}
 						</p>
@@ -45,11 +45,11 @@ const Features = () => {
 							/>
 						</svg>
 
-						<h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+						<h1 className="mt-4 text-xl font-semibold text-gray-800">
 							Várias Especialidades para Atender Suas Necessidades{" "}
 						</h1>
 
-						<p className="mt-2 text-gray-500 dark:text-gray-400">
+						<p className="mt-2 text-gray-400">
 							Do treino funcional à musculação avançada, temos programas para
 							todos os níveis e metas.
 						</p>
@@ -86,11 +86,11 @@ const Features = () => {
 							</defs>
 						</svg>
 
-						<h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+						<h1 className="mt-4 text-xl font-semibold text-gray-800">
 							Estacionamento Fácil e Acesso Conveniente
 						</h1>
 
-						<p className="mt-2 text-gray-500 dark:text-gray-400">
+						<p className="mt-2 text-gray-400">
 							Localização privilegiada, perto do centro e com fácil acesso, para
 							sua conveniência desde a chegada.{" "}
 						</p>

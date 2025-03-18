@@ -32,13 +32,15 @@ export default function Home() {
 	]
 
 	return (
-		<div className="max-w-[1280px] w-full mx-auto flex flex-col gap-28">
+		<div className="max-w-[1280px] w-full mx-auto flex flex-col">
 			<Navbar />
-			<ImagesSliderDemo />
-			<Features />
-			<FocusCardsDemo />
-			<AnimatedTestimonials testimonials={testimonialsData} />
-			<Contact />
+			<div className="flex  flex-col lg:gap-28 md:gap-16 gap-10">
+				<ImagesSliderDemo />
+				<Features />
+				<FocusCardsDemo />
+				<AnimatedTestimonials testimonials={testimonialsData} />
+				<Contact />
+			</div>
 			<Footer />
 		</div>
 	)
