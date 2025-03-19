@@ -19,7 +19,7 @@ export const Card = React.memo(
 			onMouseEnter={() => setHovered(index)}
 			onMouseLeave={() => setHovered(null)}
 			className={cn(
-				"m-4 rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-40 md:h-96 w-full transition-all duration-300 ease-out",
+				"rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-40 md:h-96 w-full transition-all duration-300 ease-out",
 				hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
 			)}
 		>
@@ -54,8 +54,8 @@ export function FocusCards({ cards }: { cards: Card[] }) {
 	const [hovered, setHovered] = useState<number | null>(null)
 
 	return (
-		<div className="flex flex-col gap-5">
-			<h1 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold ml-4">
+		<div className="flex flex-col gap-5 m-4">
+			<h1 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold">
 				Modalidades
 			</h1>
 			<div className="grid grid-cols-1 md:grid-cols-5 gap-10 mx-auto w-full">
