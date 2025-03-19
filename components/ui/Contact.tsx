@@ -2,17 +2,17 @@ const Contact = () => {
 	return (
 		<section
 			id="contato"
-			className="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 "
+			className="min-h-screen bg-gradient-to-r from-orange-500 via-orange-700 to-orange-800 "
 		>
 			<div className="container flex flex-col min-h-screen px-6 py-12 mx-auto">
 				<div className="flex-1 lg:flex lg:items-center lg:-mx-6">
-					<div className="text-white lg:w-1/2 lg:mx-6">
-						<h1 className="text-2xl font-semibold capitalize lg:text-3xl">
-							Get a quote
+					<div className="text-white lg:w-1/2 lg:mx-6 lg:pl-4">
+						<h1 className="text-4xl font-semibold capitalize lg:text-5xl">
+							Agende uma visita
 						</h1>
 
 						<p className="max-w-xl mt-6">
-							Ask us everything and we would love to hear from you
+							Entre em contato e tire suas dúvidas
 						</p>
 
 						<div className="mt-6 space-y-8 md:mt-8">
@@ -38,7 +38,7 @@ const Contact = () => {
 								</svg>
 
 								<span className="mx-2 text-white truncate w-72">
-									Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522
+									Jardim Rio Verde, Rua Uruguai 200.
 								</span>
 							</p>
 
@@ -59,7 +59,7 @@ const Contact = () => {
 								</svg>
 
 								<span className="mx-2 text-white truncate w-72">
-									(257) 563-7401
+									(35) 3232-2771
 								</span>
 							</p>
 
@@ -80,13 +80,13 @@ const Contact = () => {
 								</svg>
 
 								<span className="mx-2 text-white truncate w-72">
-									acb@example.com
+									academiabemstar@gmail.com.br
 								</span>
 							</p>
 						</div>
 
 						<div className="mt-6 md:mt-8">
-							<h3 className="text-gray-300 ">Follow us</h3>
+							<h3 className="text-white ">Siga nos nas redes sociais</h3>
 
 							<div className="flex mt-4 -mx-1.5 ">
 								<a
@@ -166,46 +166,43 @@ const Contact = () => {
 					</div>
 
 					<div className="mt-8 lg:w-1/2 lg:mx-6">
-						<div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
-							<h1 className="text-xl font-medium text-gray-700 dark:text-gray-200">
-								Contact form
+						<div className="w-full px-8 py-10 mx-auto overflow-hidden bg-orange border-large shadow-2xl rounded-xl lg:max-w-xl">
+							<h1 className="text-xl font-medium text-white">
+								Formulário de contato
 							</h1>
 
 							<form className="mt-4">
 								<div className="flex-1">
-									<label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-										Full Name
-									</label>
+									<label className="block mb-2 text-sm text-white">Nome</label>
 									<input
 										type="text"
-										placeholder="John Doe"
-										className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+										placeholder="Seu nome aqui"
+										className="block w-full px-5 py-3 mt-2 text-gray-500 border border-gray-200 rounded-md bg-gray-200  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
 									/>
 								</div>
 
 								<div className="flex-1 mt-6">
-									<label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-										Email address
-									</label>
+									<label className="block mb-2 text-sm text-white">Email</label>
 									<input
 										type="email"
-										placeholder="johndoe@example.com"
-										className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+										placeholder="seu_email@exemplo.com"
+										className="block w-full px-5 py-3 mt-2 text-gray-500 border border-gray-200 rounded-md bg-gray-200  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
 									/>
 								</div>
 
 								<div className="w-full mt-6">
-									<label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-										Message
+									<label className="block mb-2 text-sm text-white">
+										Mensagem
 									</label>
 									<textarea
-										className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-										placeholder="Message"
+										className="block w-full h-32 px-5 py-3 mt-2 text-gray-500 border border-gray-200 rounded-md bg-gray-200  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+										// className="block w-full h-32 px-5 py-3 mt-2 text-white placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-white dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+										placeholder="Mensagem aqui"
 									></textarea>
 								</div>
 
-								<button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
-									get in touch
+								<button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-gray-300 rounded-md hover:bg-gray-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+									Envie sua mensagem
 								</button>
 							</form>
 						</div>
