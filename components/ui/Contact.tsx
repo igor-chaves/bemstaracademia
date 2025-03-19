@@ -2,9 +2,9 @@ const Contact = () => {
 	return (
 		<section
 			id="contato"
-			className="min-h-screen bg-gradient-to-r from-orange-500 via-orange-700 to-orange-800 "
+			className="bg-gradient-to-r from-orange-500 via-orange-700 to-orange-800 "
 		>
-			<div className="container flex flex-col min-h-screen px-6 py-12 mx-auto">
+			<div className="container flex flex-col  px-6 py-12 mx-auto">
 				<div className="flex-1 lg:flex lg:items-center lg:-mx-6">
 					<div className="text-white lg:w-1/2 lg:mx-6 lg:pl-4">
 						<h1 className="text-4xl font-semibold capitalize lg:text-5xl">
