@@ -49,7 +49,9 @@ export const AnimatedTestimonials = ({
 
 	return (
 		<div>
-			<h1 className="font-bold text-slate-800 text-6xl mb-6">Testemunhos</h1>
+			<h1 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold mb-6">
+				Testemunhos
+			</h1>
 			<div className="w-full mx-auto antialiased font-sans px-6 md:px-8 lg:px-12 pt-20 pb-12 bg-gray-200 flex align-middle justify-center">
 				<div className="relative grid md:grid-cols-2 gap-10 grid-cols-1">
 					<div className="">

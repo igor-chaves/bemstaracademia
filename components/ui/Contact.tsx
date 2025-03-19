@@ -196,7 +196,6 @@ const Contact = () => {
 									</label>
 									<textarea
 										className="block w-full h-32 px-5 py-3 mt-2 text-gray-500 border border-gray-200 rounded-md bg-gray-200  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-										// className="block w-full h-32 px-5 py-3 mt-2 text-white placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-white dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
 										placeholder="Mensagem aqui"
 									></textarea>
 								</div>
