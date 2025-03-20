@@ -1,10 +1,10 @@
-import Navbar from "@/components/ui/Navbar"
 import { ImagesSliderDemo } from "@/components/ui/Hero"
 import { AnimatedTestimonials } from "@/components/ui/Testimonials"
 import Footer from "@/components/ui/Footer"
 import Contact from "@/components/ui/Contact"
 import { FocusCardsDemo } from "@/components/ui/CardsFocus"
 import Features from "@/components/ui/Features"
+import Navbar, { NavbarDemo } from "@/components/ui/Navbar"
 
 export default function Home() {
 	const testimonialsData = [
@@ -33,7 +33,7 @@ export default function Home() {
 
 	return (
 		<div className="max-w-[1280px] w-full mx-auto flex flex-col">
-			{/* <Navbar /> */}
+			<Navbar />
 			<div className="flex  flex-col lg:gap-28 md:gap-16 gap-10">
 				<ImagesSliderDemo />
 				<Features />

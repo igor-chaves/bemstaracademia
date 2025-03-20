@@ -54,7 +54,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
 	const [hovered, setHovered] = useState<number | null>(null)
 
 	return (
-		<div className="flex flex-col gap-5 m-4">
+		<div className="flex flex-col gap-5 m-4" id="modalidades">
 			<h1 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold">
 				Modalidades
 			</h1>
