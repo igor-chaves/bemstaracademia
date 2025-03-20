@@ -1,7 +1,7 @@
 const Footer = () => {
 	return (
-		<footer className="footer bg-base-200 text-base-content p-10">
-			<aside>
+		<footer className="footer bg-gray-400 text-base-content p-10">
+			<aside className="text-white">
 				<svg
 					width="50"
 					height="50"
@@ -19,7 +19,7 @@ const Footer = () => {
 					Promovendo saúde à comunidade Tricordiana
 				</p>
 			</aside>
-			<nav>
+			<nav className="text-white">
 				<h6 className="footer-title">Serviços</h6>
 				<a className="link link-hover">Natação</a>
 				<a className="link link-hover">Hidroterapia</a>
@@ -27,7 +27,7 @@ const Footer = () => {
 				<a className="link link-hover">Musculação</a>
 				<a className="link link-hover">Pilates</a>
 			</nav>
-			<nav>
+			<nav className="text-white">
 				<h6 className="footer-title">Empresa</h6>
 				<a className="link link-hover">Testemunhos</a>
 				<a className="link link-hover">Contato</a>
