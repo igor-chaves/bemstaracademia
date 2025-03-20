@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<footer className="footer bg-gray-400 text-base-content p-10">
+		<footer className="footer bg-slate-800 text-base-content p-10">
 			<aside className="text-white">
 				<svg
 					width="50"
@@ -20,7 +20,7 @@ const Footer = () => {
 				</p>
 			</aside>
 			<nav className="text-white">
-				<h6 className="footer-title">Serviços</h6>
+				<h6 className="footer-title">Modalidades</h6>
 				<a className="link link-hover">Natação</a>
 				<a className="link link-hover">Hidroterapia</a>
 				<a className="link link-hover">Hidroginástica</a>
@@ -28,7 +28,7 @@ const Footer = () => {
 				<a className="link link-hover">Pilates</a>
 			</nav>
 			<nav className="text-white">
-				<h6 className="footer-title">Empresa</h6>
+				<h6 className="footer-title">Links úteis</h6>
 				<a className="link link-hover">Testemunhos</a>
 				<a className="link link-hover">Contato</a>
 				<a className="link link-hover">Acesso</a>
