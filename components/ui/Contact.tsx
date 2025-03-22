@@ -1,13 +1,57 @@
 const Contact = () => {
+	const inputsProps = [
+		{
+			tag: "input",
+			title: "Nome",
+			placeholder: "Seu nome aqui",
+		},
+		{
+			tag: "input",
+			title: "Email",
+			placeholder: "seu_email@exemplo.com",
+		},
+		{
+			tag: "textarea",
+			title: "Mensagem",
+			placeholder: "Sua mensagem aqui",
+		},
+	]
+
+	const Inputs = () => {
+		return (
+			<>
+				{inputsProps.map(({ title, placeholder, tag }, index) => {
+					return (
+						<div className="flex-1 mt-6" key={index}>
+							<label className="block mb-2 text-sm text-gray-500">
+								{title}
+							</label>
+							{tag === "input" ? (
+								<input
+									type="text"
+									placeholder={placeholder}
+									className="block w-full px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 dark:focus:border-gray-300 focus:outline-none focus:ring"
+								/>
+							) : (
+								<textarea
+									className="block w-full h-32 px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 dark:focus:border-gray-300 focus:outline-none focus:ring"
+									placeholder={placeholder}
+								></textarea>
+							)}
+						</div>
+					)
+				})}
+			</>
+		)
+	}
+
 	return (
-		<section
-			id="contato"
-			className="bg-gradient-to-r from-orange-500 via-orange-700 to-orange-800 "
-		>
-			<div className="container flex flex-col  px-6 py-12 mx-auto">
+		<section id="contato" className="bg-gray-100 ">
+			<div className="container flex flex-col px-6 py-12 mx-auto">
 				<div className="flex-1 lg:flex lg:items-center lg:-mx-6">
-					<div className="text-white lg:w-1/2 lg:mx-6 lg:pl-4">
-						<h1 className="text-4xl font-semibold capitalize lg:text-5xl">
+					<div className="text-gray-400 lg:w-1/2 lg:mx-6 lg:pl-4">
+						{/* <h1 className="text-4xl font-semibold capitalize lg:text-5xl"> */}
+						<h1 className="lg:text-5xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-300 to-orange-400 font-bold pb-2">
 							Agende uma visita
 						</h1>
 
@@ -19,7 +63,7 @@ const Contact = () => {
 							<p className="flex items-start -mx-2">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									className="w-6 h-6 mx-2 text-white"
+									className="w-6 h-6 mx-2 text-orange-500"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"
@@ -37,7 +81,7 @@ const Contact = () => {
 									/>
 								</svg>
 
-								<span className="mx-2 text-white truncate w-72">
+								<span className="mx-2 text-gray-500 truncate w-72">
 									Jardim Rio Verde, Rua Uruguai 200.
 								</span>
 							</p>
@@ -45,7 +89,7 @@ const Contact = () => {
 							<p className="flex items-start -mx-2">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									className="w-6 h-6 mx-2 text-white"
+									className="w-6 h-6 mx-2 text-orange-500"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"
@@ -58,7 +102,7 @@ const Contact = () => {
 									/>
 								</svg>
 
-								<span className="mx-2 text-white truncate w-72">
+								<span className="mx-2 text-gray-500 truncate w-72">
 									(35) 3232-2771
 								</span>
 							</p>
@@ -66,7 +110,7 @@ const Contact = () => {
 							<p className="flex items-start -mx-2">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									className="w-6 h-6 mx-2 text-white"
+									className="w-6 h-6 mx-2 text-orange-500"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"
@@ -79,18 +123,18 @@ const Contact = () => {
 									/>
 								</svg>
 
-								<span className="mx-2 text-white truncate w-72">
+								<span className="mx-2 text-gray-500 truncate w-72">
 									academiabemstar@gmail.com.br
 								</span>
 							</p>
 						</div>
 
 						<div className="mt-6 md:mt-8">
-							<h3 className="text-white ">Siga nos nas redes sociais</h3>
+							<h3 className="text-gray-400 ">Siga nos nas redes sociais</h3>
 
 							<div className="flex mt-4 -mx-1.5 ">
 								<a
-									className="mx-1.5 text-white transition-colors duration-300 transform hover:text-blue-500"
+									className="mx-1.5 text-gray-500 transition-colors duration-300 transform hover:text-orange-500"
 									href="#"
 								>
 									<svg
@@ -104,7 +148,7 @@ const Contact = () => {
 								</a>
 
 								<a
-									className="mx-1.5 text-white transition-colors duration-300 transform hover:text-blue-500"
+									className="mx-1.5 text-gray-500 transition-colors duration-300 transform hover:text-orange-500"
 									href="#"
 								>
 									<svg
@@ -129,7 +173,7 @@ const Contact = () => {
 								</a>
 
 								<a
-									className="mx-1.5 text-white transition-colors duration-300 transform hover:text-blue-500"
+									className="mx-1.5 text-gray-500 transition-colors duration-300 transform hover:text-orange-500"
 									href="#"
 								>
 									<svg
@@ -146,7 +190,7 @@ const Contact = () => {
 								</a>
 
 								<a
-									className="mx-1.5 text-white transition-colors duration-300 transform hover:text-blue-500"
+									className="mx-1.5 text-gray-500 transition-colors duration-300 transform hover:text-orange-500"
 									href="#"
 								>
 									<svg
@@ -166,41 +210,15 @@ const Contact = () => {
 					</div>
 
 					<div className="mt-8 lg:w-1/2 lg:mx-6">
-						<div className="w-full px-8 py-10 mx-auto overflow-hidden bg-orange border-large shadow-2xl rounded-xl lg:max-w-xl">
-							<h1 className="text-xl font-medium text-white">
+						<div className="w-full px-8 py-10 mx-auto overflow-hidden bg-orange border-orange-300 border-medium shadow-2xl rounded-xl lg:max-w-xl bg-orange-100">
+							<h1 className="text-xl font-medium text-gray-500">
 								Formulário de contato
 							</h1>
 
 							<form className="mt-4">
-								<div className="flex-1">
-									<label className="block mb-2 text-sm text-white">Nome</label>
-									<input
-										type="text"
-										placeholder="Seu nome aqui"
-										className="block w-full px-5 py-3 mt-2 text-gray-500 border border-gray-200 rounded-md bg-gray-200  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-									/>
-								</div>
+								<Inputs />
 
-								<div className="flex-1 mt-6">
-									<label className="block mb-2 text-sm text-white">Email</label>
-									<input
-										type="email"
-										placeholder="seu_email@exemplo.com"
-										className="block w-full px-5 py-3 mt-2 text-gray-500 border border-gray-200 rounded-md bg-gray-200  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-									/>
-								</div>
-
-								<div className="w-full mt-6">
-									<label className="block mb-2 text-sm text-white">
-										Mensagem
-									</label>
-									<textarea
-										className="block w-full h-32 px-5 py-3 mt-2 text-gray-500 border border-gray-200 rounded-md bg-gray-200  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-										placeholder="Mensagem aqui"
-									></textarea>
-								</div>
-
-								<button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-gray-300 rounded-md hover:bg-gray-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+								<button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-orange-300 rounded-md hover:bg-orange-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
 									Envie sua mensagem
 								</button>
 							</form>

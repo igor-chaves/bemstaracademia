@@ -40,8 +40,8 @@ export default function Home() {
 				<FocusCardsDemo />
 				<AnimatedTestimonials testimonials={testimonialsData} />
 				<Contact />
+				<Footer />
 			</div>
-			<Footer />
 		</div>
 	)
 }
