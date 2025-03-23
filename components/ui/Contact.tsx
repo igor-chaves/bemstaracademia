@@ -30,11 +30,11 @@ const Contact = () => {
 								<input
 									type="text"
 									placeholder={placeholder}
-									className="block w-full px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 dark:focus:border-gray-300 focus:outline-none focus:ring"
+									className="block w-full px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 dark:focus:border-gray-300 focus:outline-none focus:ring placeholder:font-inter"
 								/>
 							) : (
 								<textarea
-									className="block w-full h-32 px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 dark:focus:border-gray-300 focus:outline-none focus:ring"
+									className="block w-full h-32 px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 dark:focus:border-gray-300 focus:outline-none focus:ring placeholder:font-inter"
 									placeholder={placeholder}
 								></textarea>
 							)}
@@ -46,7 +46,7 @@ const Contact = () => {
 	}
 
 	return (
-		<section id="contato" className="bg-gray-100 ">
+		<section id="acesso" className="bg-gray-100 scroll-mt-14">
 			<div className="container flex flex-col px-6 py-12 mx-auto">
 				<div className="flex-1 lg:flex lg:items-center lg:-mx-6">
 					<div className="text-gray-400 lg:w-1/2 lg:mx-6 lg:pl-4">
@@ -209,7 +209,7 @@ const Contact = () => {
 						</div>
 					</div>
 
-					<div className="mt-8 lg:w-1/2 lg:mx-6">
+					<div className="mt-8 lg:w-1/2 lg:mx-6 scroll-mt-24" id="contato">
 						<div className="w-full px-8 py-10 mx-auto overflow-hidden bg-orange border-orange-300 border-medium shadow-2xl rounded-xl lg:max-w-xl bg-orange-100">
 							<h1 className="text-xl font-medium text-gray-500">
 								Formulário de contato

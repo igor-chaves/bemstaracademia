@@ -5,18 +5,15 @@ import { useState } from "react"
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
 
+	const linksNavbar = ["home", "modalidades", "acesso", "contato"]
+
 	return (
 		<nav className="sticky top-0 z-10 bg-orange-300 shadow">
 			<div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
 				<div className="flex items-center justify-between">
 					<a href="#">
-						{/* <img
-							className="w-auto h-6 sm:h-7"
-							src="https://merakiui.com/images/full-logo.svg"
-							alt="Logo"
-						/> */}
 						<span className="text-gray-700 md:text-2xl tracking-wider font-inter">
-							BEMSTAR
+							Bemstar
 						</span>
 					</a>
 
@@ -70,30 +67,20 @@ const Navbar = () => {
 					}`}
 				>
 					<div className="flex flex-col md:flex-row md:mx-6">
-						<a
-							className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-orange-500 dark:hover:text-orange-400 md:mx-4 md:my-0"
-							href="#"
-						>
-							Home
-						</a>
-						<a
-							className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-orange-500 dark:hover:text-orange-400 md:mx-4 md:my-0"
-							href="#modalidades"
-						>
-							Modalidades
-						</a>
-						<a
-							className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-orange-500 md:mx-4 md:my-0"
-							href="#contato"
-						>
-							Contato
-						</a>
-						<a
-							className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-orange-500 md:mx-4 md:my-0"
-							href="#acess"
-						>
-							Acesso
-						</a>
+						{linksNavbar.map((link) => {
+							const href = link === "home" ? "#" : `#${link}`
+
+							return (
+								<a
+									key={link}
+									onClick={() => setIsOpen(!isOpen)}
+									className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-orange-500 dark:hover:text-orange-400 md:mx-4 md:my-0"
+									href={href}
+								>
+									{link.charAt(0).toUpperCase() + link.slice(1)}
+								</a>
+							)
+						})}
 					</div>
 				</div>
 			</div>

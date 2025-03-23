@@ -31,7 +31,7 @@ export function ImagesSliderDemo() {
 					<span id="contact" className="lg:text-2xl md:text-xl text-xs">
 						Agende sua visita →
 					</span>
-					<div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+					<div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
 				</Link>
 			</motion.div>
 		</ImagesSlider>
