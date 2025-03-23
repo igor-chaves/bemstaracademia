@@ -18,7 +18,7 @@ const Navbar = () => {
 					</a>
 
 					{/* Mobile menu button */}
-					<div className="flex lg:hidden">
+					<div className="flex md:hidden">
 						<button
 							onClick={() => setIsOpen(!isOpen)}
 							type="button"

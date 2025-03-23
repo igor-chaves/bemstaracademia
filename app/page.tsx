@@ -32,14 +32,24 @@ export default function Home() {
 	]
 
 	return (
-		<div className="max-w-[1280px] w-full mx-auto flex flex-col">
+		<div className="w-full flex flex-col">
 			<Navbar />
-			<div className="flex  flex-col lg:gap-28 md:gap-16 gap-10">
+
+			<div className="flex flex-col lg:gap-28 md:gap-16 gap-10">
 				<ImagesSliderDemo />
-				<Features />
+
+				<div className="max-w-[1280px] w-full mx-auto px-4">
+					<Features />
+				</div>
+
 				<FocusCardsDemo />
+
 				<AnimatedTestimonials testimonials={testimonialsData} />
-				<Contact />
+
+				<div className="max-w-[1280px] w-full mx-auto px-4">
+					<Contact />
+				</div>
+
 				<Footer />
 			</div>
 		</div>
