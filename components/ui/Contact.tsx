@@ -30,11 +30,11 @@ const Contact = () => {
 								<input
 									type="text"
 									placeholder={placeholder}
-									className="block w-full px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 dark:focus:border-gray-300 focus:outline-none focus:ring placeholder:font-inter"
+									className="block w-full px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 focus:outline-none focus:ring placeholder:font-inter"
 								/>
 							) : (
 								<textarea
-									className="block w-full h-32 px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 dark:focus:border-gray-300 focus:outline-none focus:ring placeholder:font-inter"
+									className="block w-full h-32 px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 focus:outline-none focus:ring placeholder:font-inter"
 									placeholder={placeholder}
 								></textarea>
 							)}

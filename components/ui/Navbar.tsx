@@ -22,7 +22,7 @@ const Navbar = () => {
 						<button
 							onClick={() => setIsOpen(!isOpen)}
 							type="button"
-							className="text-gray-700 hover:text-orange-700 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+							className="text-gray-700 hover:text-orange-700 focus:outline-none focus:text-gray-600"
 							aria-label="toggle menu"
 						>
 							{isOpen ? (
@@ -62,7 +62,7 @@ const Navbar = () => {
 
 				{/* Mobile Menu */}
 				<div
-					className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-orange-300 dark:bg-gray-700 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
+					className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-orange-300 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
 						isOpen ? "translate-x-0 opacity-100" : "opacity-0 -translate-x-full"
 					}`}
 				>
@@ -74,7 +74,7 @@ const Navbar = () => {
 								<a
 									key={link}
 									onClick={() => setIsOpen(!isOpen)}
-									className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-orange-500 dark:hover:text-orange-400 md:mx-4 md:my-0"
+									className="my-2 text-gray-700 transition-colors duration-300 transform hover:text-orange-500 md:mx-4 md:my-0"
 									href={href}
 								>
 									{link.charAt(0).toUpperCase() + link.slice(1)}
