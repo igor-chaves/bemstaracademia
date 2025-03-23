@@ -46,7 +46,7 @@ const Contact = () => {
 	}
 
 	return (
-		<section id="acesso" className="bg-gray-100 scroll-mt-14">
+		<section id="acesso" className=" scroll-mt-14">
 			<div className="container flex flex-col px-6 py-12 mx-auto">
 				<div className="flex-1 lg:flex lg:items-center lg:-mx-6">
 					<div className="text-gray-400 lg:w-1/2 lg:mx-6 lg:pl-4">
