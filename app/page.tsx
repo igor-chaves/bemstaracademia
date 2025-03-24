@@ -5,6 +5,7 @@ import Contact from "@/components/ui/Contact"
 import { FocusCardsDemo } from "@/components/ui/CardsFocus"
 import Features from "@/components/ui/Features"
 import Navbar from "@/components/ui/Navbar"
+import PricingPlan, { Faq } from "@/components/ui/Faq"
 
 export default function Home() {
 	const testimonialsData = [
@@ -45,6 +46,7 @@ export default function Home() {
 				<FocusCardsDemo />
 
 				<AnimatedTestimonials testimonials={testimonialsData} />
+				<Faq />
 
 				<div className="max-w-[1280px] w-full mx-auto px-4">
 					<Contact />

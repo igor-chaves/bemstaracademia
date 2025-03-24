@@ -52,6 +52,7 @@ type Card = {
 
 export function FocusCards({ cards }: { cards: Card[] }) {
 	const [hovered, setHovered] = useState<number | null>(null)
+	
 
 	return (
 		<div className="flex flex-col gap-5 m-4 scroll-mt-24" id="modalidades">

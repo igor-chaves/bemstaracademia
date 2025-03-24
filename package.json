@@ -13,6 +13,8 @@
 		"@heroui/react": "^2.7.2",
 		"@heroui/system": "^2.4.10",
 		"@heroui/theme": "^2.4.9",
+		"@mantine/core": "^7.17.2",
+		"@mantine/hooks": "^7.17.2",
 		"@tabler/icons-react": "^3.30.0",
 		"clsx": "^2.1.1",
 		"framer-motion": "^12.4.7",
