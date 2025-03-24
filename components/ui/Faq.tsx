@@ -28,8 +28,8 @@ const Faq = () => {
 
 				<div className="mt-20">
 					<ul className="">
-						{faq.map(({ question, answer }) => (
-							<li className="text-left mb-10">
+						{faq.map(({ question, answer }, index) => (
+							<li className="text-left mb-10" key={index}>
 								<div className="flex flex-row items-start mb-5">
 									<div className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-orange-500 text-white border-4 border-white text-xl font-semibold">
 										<svg

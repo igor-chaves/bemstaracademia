@@ -5,7 +5,7 @@ import Contact from "@/components/ui/Contact"
 import { FocusCardsDemo } from "@/components/ui/CardsFocus"
 import Features from "@/components/ui/Features"
 import Navbar from "@/components/ui/Navbar"
-import PricingPlan, { Faq } from "@/components/ui/Faq"
+import Faq from "@/components/ui/Faq"
 
 export default function Home() {
 	const testimonialsData = [
