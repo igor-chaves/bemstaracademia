@@ -47,7 +47,7 @@ const Contact = () => {
 
 	return (
 		<section id="acesso" className=" scroll-mt-14">
-			<div className="container flex flex-col px-6 py-12 mx-auto">
+			<div className="container flex flex-col px-1 py-12 mx-auto">
 				<div className="flex-1 lg:flex lg:items-center lg:-mx-6">
 					<div className="text-gray-400 lg:w-1/2 lg:mx-6 lg:pl-4">
 						{/* <h1 className="text-4xl font-semibold capitalize lg:text-5xl"> */}
@@ -210,7 +210,7 @@ const Contact = () => {
 					</div>
 
 					<div className="mt-8 lg:w-1/2 lg:mx-6 scroll-mt-24" id="contato">
-						<div className="w-full px-8 py-10 mx-auto overflow-hidden bg-orange border-orange-300 border-medium shadow-2xl rounded-xl lg:max-w-xl bg-orange-100">
+						<div className="w-full md:px-8 px-6 md:py-10 py-5 mx-auto overflow-hidden bg-orange border-orange-300 border-medium shadow-2xl rounded-xl lg:max-w-xl bg-orange-100">
 							<h1 className="text-xl font-medium text-gray-500">
 								Formulário de contato
 							</h1>
