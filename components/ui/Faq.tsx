@@ -1,4 +1,4 @@
-export function Faq() {
+const Faq = () => {
 	const faq = [
 		{
 			question: "Preciso saber nadar para fazer hidroginástica?",
@@ -118,3 +118,4 @@ export function Faq() {
 		</div>
 	)
 }
+export default Faq
