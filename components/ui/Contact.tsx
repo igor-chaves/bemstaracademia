@@ -80,10 +80,12 @@ const Contact = () => {
 										d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
 									/>
 								</svg>
-
 								<span className="mx-2 text-gray-500 truncate w-72">
-									Jardim Rio Verde, Rua Uruguai 200.
+									Três Corações, Jardim Rio Verde
+									<br />
+									Rua José Carneiro de Souza, 200
 								</span>
+								<br />
 							</p>
 
 							<p className="flex items-start -mx-2">
@@ -103,7 +105,7 @@ const Contact = () => {
 								</svg>
 
 								<span className="mx-2 text-gray-500 truncate w-72">
-									(35) 3232-2771
+									(35) 2146-4524 / (35) 99671-7275
 								</span>
 							</p>
 
