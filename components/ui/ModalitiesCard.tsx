@@ -69,7 +69,7 @@ const ModalitiesCard = ({ cards }: { cards: Card[] }) => {
 			<div className="grid gap-4 md:gap-12 grid-cols-2 lg:grid-cols-4">
 				{cards.map((card, index) => (
 					<div key={index}>
-						<div className="text-3xl pl-2 pb-3 text-gray-700">
+						<div className="md:text-3xl text-1xl pb-3 text-gray-700">
 							<span>{card.title}</span>
 						</div>
 						<Card
