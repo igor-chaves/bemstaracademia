@@ -53,12 +53,12 @@ type Card = {
 export function FocusCards({ cards }: { cards: Card[] }) {
 	const [hovered, setHovered] = useState<number | null>(null)
 	
-
 	return (
 		<div className="flex flex-col gap-5 m-4 scroll-mt-24" id="modalidades">
 			<h1 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold">
 				Modalidades
 			</h1>
+			
 			<div className="grid grid-cols-1 md:grid-cols-5 gap-10 mx-auto w-full">
 				{cards.map((card, index) => (
 					<Card

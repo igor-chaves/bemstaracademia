@@ -12,7 +12,7 @@ type Testimonial = {
 	src: string
 }
 
-export const AnimatedTestimonials = ({
+const AnimatedTestimonials = ({
 	testimonials,
 	autoplay = false,
 }: {
@@ -177,3 +177,5 @@ export const AnimatedTestimonials = ({
 		</div>
 	)
 }
+
+export default AnimatedTestimonials

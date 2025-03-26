@@ -4,7 +4,7 @@ import React from "react"
 import { ImagesSlider } from "./images-slider"
 import Link from "next/link"
 
-export function ImagesSliderDemo() {
+const HeroImageSlide = () => {
 	const images = ["/hero1.jpeg"]
 	return (
 		<ImagesSlider
@@ -37,3 +37,4 @@ export function ImagesSliderDemo() {
 		</ImagesSlider>
 	)
 }
+export default HeroImageSlide

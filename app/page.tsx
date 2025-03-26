@@ -1,11 +1,11 @@
-import { ImagesSliderDemo } from "@/components/ui/Hero"
-import { AnimatedTestimonials } from "@/components/ui/Testimonials"
-import Footer from "@/components/ui/Footer"
-import Contact from "@/components/ui/Contact"
-import { FocusCardsDemo } from "@/components/ui/CardsFocus"
-import Features from "@/components/ui/Features"
 import Navbar from "@/components/ui/Navbar"
+import HeroImageSlide from "@/components/ui/Hero"
+import Features from "@/components/ui/Features"
+import Modalities from "@/components/ui/Modalities"
+import AnimatedTestimonials from "@/components/ui/Testimonials"
+import Contact from "@/components/ui/Contact"
 import Faq from "@/components/ui/Faq"
+import Footer from "@/components/ui/Footer"
 
 export default function Home() {
 	const testimonialsData = [
@@ -37,14 +37,13 @@ export default function Home() {
 			<Navbar />
 
 			<div className="flex flex-col lg:gap-28 md:gap-16 gap-10">
-				<ImagesSliderDemo />
+				<HeroImageSlide />
 
 				<div className="max-w-[1280px] w-full mx-auto px-4">
 					<Features />
 				</div>
 
-				<FocusCardsDemo />
-
+				<Modalities />
 				<AnimatedTestimonials testimonials={testimonialsData} />
 				<Faq />
 

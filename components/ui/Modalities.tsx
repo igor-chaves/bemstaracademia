@@ -1,6 +1,6 @@
-import { FocusCards } from "@/components/ui/focus-cards"
+import { FocusCards } from "@/components/ui/FocusCards"
 
-export function FocusCardsDemo() {
+const Modalities = () => {
 	const cards = [
 		{
 			title: "Natação",
@@ -26,3 +26,4 @@ export function FocusCardsDemo() {
 
 	return <FocusCards cards={cards} />
 }
+export default Modalities
