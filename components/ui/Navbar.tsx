@@ -5,7 +5,13 @@ import { useState } from "react"
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
 
-	const linksNavbar = ["home", "modalidades", "acesso", "contato", "perguntas frequentes"]
+	const linksNavbar = [
+		"home",
+		"modalidades",
+		"acesso",
+		"contato",
+		"perguntas frequentes",
+	]
 
 	return (
 		<nav className="sticky top-0 z-10 bg-orange-300 shadow">
@@ -68,7 +74,12 @@ const Navbar = () => {
 				>
 					<div className="flex flex-col md:flex-row md:mx-6">
 						{linksNavbar.map((link) => {
-							const href = link === "home" ? "#" : `#${link}`
+							const href =
+								link === "home"
+									? "#"
+									: link === "perguntas frequentes"
+									? "#faq"
+									: `#${link}`
 
 							return (
 								<a
