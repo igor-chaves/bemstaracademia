@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Footer = () => {
 	return (
 		<footer className="w-full bg-orange-300 ">
@@ -20,19 +22,40 @@ const Footer = () => {
 						Promovendo saúde à comunidade Tricordiana
 					</p>
 				</aside>
+				
 				<nav className="text-gray-700">
 					<h6 className="footer-title">Modalidades</h6>
-					<a className="link link-hover">Natação</a>
-					<a className="link link-hover">Hidroterapia</a>
-					<a className="link link-hover">Hidroginástica</a>
-					<a className="link link-hover">Musculação</a>
-					<a className="link link-hover">Pilates</a>
+					<Link href="#" className="link link-hover">
+						Natação
+					</Link>
+					<Link href="#" className="link link-hover">
+						Hidroterapia
+					</Link>
+					<Link href="#" className="link link-hover">
+						Hidroginástica
+					</Link>
+					<Link href="#" className="link link-hover">
+						Musculação
+					</Link>
+					<Link href="#" className="link link-hover">
+						Pilates
+					</Link>
 				</nav>
+
 				<nav className="text-gray-700">
 					<h6 className="footer-title">Links úteis</h6>
-					<a className="link link-hover">Testemunhos</a>
-					<a className="link link-hover">Contato</a>
-					<a className="link link-hover">Acesso</a>
+					<Link href="#faq" className="link link-hover">
+						Perguntas Frequentes
+					</Link>
+					<Link href="#testemunhos" className="link link-hover">
+						Testemunhos
+					</Link>
+					<Link href="#contato" className="link link-hover">
+						Contato
+					</Link>
+					<Link href="#acesso" className="link link-hover">
+						Acesso
+					</Link>
 				</nav>
 			</div>
 		</footer>

@@ -5,7 +5,7 @@ import { useState } from "react"
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
 
-	const linksNavbar = ["home", "modalidades", "acesso", "contato"]
+	const linksNavbar = ["home", "modalidades", "acesso", "contato", "perguntas frequentes"]
 
 	return (
 		<nav className="sticky top-0 z-10 bg-orange-300 shadow">

@@ -18,7 +18,7 @@ const Faq = () => {
 	]
 
 	return (
-		<div>
+		<div id="faq">
 			<div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
 				<div className="text-center">
 					<h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
