@@ -68,7 +68,7 @@ const Navbar = () => {
 
 				{/* Mobile Menu */}
 				<div
-					className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-orange-300 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
+					className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
 						isOpen ? "translate-x-0 opacity-100" : "opacity-0 -translate-x-full"
 					}`}
 				>

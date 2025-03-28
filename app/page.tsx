@@ -46,6 +46,7 @@ export default function Home() {
 				<div className="max-w-[1280px] w-full mx-auto px-4">
 					<Modalities />
 				</div>
+
 				<AnimatedTestimonials testimonials={testimonialsData} />
 				<Faq />
 
