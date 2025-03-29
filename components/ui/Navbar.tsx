@@ -8,9 +8,9 @@ const Navbar = () => {
 	const linksNavbar = [
 		"home",
 		"modalidades",
+		"perguntas frequentes",
 		"acesso",
 		"contato",
-		"perguntas frequentes",
 	]
 
 	return (
