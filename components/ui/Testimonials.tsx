@@ -61,7 +61,7 @@ const AnimatedTestimonials = ({ autoplay = false }: { autoplay?: boolean }) => {
 	}, [autoplay])
 
 	return (
-		<div className="w-full" id="testemunhos">
+		<div className="w-full scroll-m-16" id="testemunhos">
 			<h1 className="max-w-[1280px] mx-auto lg:px-16 lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold mb-6 ml-4">
 				Testemunhos
 			</h1>
