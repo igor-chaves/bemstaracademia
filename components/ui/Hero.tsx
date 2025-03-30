@@ -8,7 +8,8 @@ const HeroImageSlide = () => {
 	const images = ["/hero1.jpeg"]
 	return (
 		<ImagesSlider
-			className="lg:h-[30rem] md:h-[20rem] h-[15rem] z-0 flex items-end pb-8"
+			className="h-[30rem] z-0 flex items-end pb-8"
+			// className="lg:h-[30rem] md:h-[20rem] h-[15rem] z-0 flex items-end pb-8"
 			images={images}
 		>
 			<motion.div
@@ -17,21 +18,20 @@ const HeroImageSlide = () => {
 				transition={{ duration: 0.6 }}
 				className="z-50 flex flex-col justify-center items-center"
 			>
-				<motion.p className="font-bold lg:text-6xl md:text-4xl text-xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+				<motion.p className="font-bold lg:text-7xl text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+					{/* <motion.p className="font-bold lg:text-6xl md:text-4xl text-xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4"> */}
 					Conquiste cada braçada! <br />{" "}
-					<span className="lg:text-6xl md:text-4xl text-xl text-transparent bg-clip-text bg-gradient-to-b from-orange-100 to-orange-400 font-bold">
+					<span className=" lg:text-8xl text-6xl text-transparent bg-clip-text bg-gradient-to-b from-orange-100 to-orange-400 font-bold">
+						{/* <span className="lg:text-6xl md:text-4xl text-xl text-transparent bg-clip-text bg-gradient-to-b from-orange-100 to-orange-400 font-bold"> */}
 						Aprenda
 					</span>{" "}
 					com a gente
 				</motion.p>
 				<Link
 					href="#contato"
-					className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative lg:mt-4 md:mt-2 mt-0"
+					className="sm:w-auto md:px-8 px-6 md:py-4 py-2 mt-6 text-sm sm:text-base md:text-lg font-medium tracking-wide text-gray-800 hover:text-white capitalize bg-orange-400 hover:bg-orange-300 rounded-md"
 				>
-					<span id="contact" className="lg:text-2xl md:text-xl text-xs">
-						Agende sua visita →
-					</span>
-					<div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+					<span id="contact">Agende sua visita →</span>
 				</Link>
 			</motion.div>
 		</ImagesSlider>
