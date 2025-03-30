@@ -5,29 +5,42 @@ import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
 
-type Testimonial = {
-	quote: string
-	name: string
-	designation: string
-	src: string
-}
+const testimonialsData = [
+	{
+		quote:
+			"A natação tem me feito muito bem! Sinto que meu condicionamento melhorou e, além disso, é um momento super relaxante do meu dia. A equipe é super profissional e me sinto segura desde o primeiro dia.",
+		name: "Marta Aparecida",
+		designation: "Aluna, Natação",
+		src: "/cliente1.avif",
+	},
+	{
+		quote:
+			"Comecei a hidroginástica por recomendação médica e estou amando! As aulas são animadas, os exercícios são leves e eficientes, e ainda faço amigos. Me sinto com muito mais disposição no dia a dia.",
+		name: "José Araújo",
+		designation: "Aluno, Hidronatação",
+		src: "/cliente2.avif",
+	},
+	{
+		quote:
+			"Fazer pilates aqui tem sido transformador! As aulas são dinâmicas, com exercícios que realmente ajudam na postura e nas dores do dia a dia. Os instrutores são atenciosos e sempre adaptam os movimentos pra cada aluno.",
+		name: "Sérgio dos Reis",
+		designation: "Aluno, Pilates",
+		src: "/cliente3.avif",
+	},
+]
 
-const AnimatedTestimonials = ({
-	testimonials,
-	autoplay = false,
-}: {
-	testimonials: Testimonial[]
-	autoplay?: boolean
-}) => {
+const AnimatedTestimonials = ({ autoplay = false }: { autoplay?: boolean }) => {
 	const [active, setActive] = useState(0)
 	const [randomRotation, setRandomRotation] = useState<number | null>(null) // estado para armazenar a rotação aleatória
 
 	const handleNext = () => {
-		setActive((prev) => (prev + 1) % testimonials.length)
+		setActive((prev) => (prev + 1) % testimonialsData.length)
 	}
 
 	const handlePrev = () => {
-		setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length)
+		setActive(
+			(prev) => (prev - 1 + testimonialsData.length) % testimonialsData.length
+		)
 	}
 
 	const isActive = (index: number) => {
@@ -58,7 +71,7 @@ const AnimatedTestimonials = ({
 						<div className="relative z-0">
 							<div className="relative lg:h-80 md:h-60 max-w-full h-40">
 								<AnimatePresence>
-									{testimonials.map((testimonial, index) => (
+									{testimonialsData.map((testimonial, index) => (
 										<motion.div
 											key={testimonial.src}
 											initial={{
@@ -74,7 +87,7 @@ const AnimatedTestimonials = ({
 												rotate: isActive(index) ? 0 : randomRotation ?? 0, // mesma coisa aqui
 												zIndex: isActive(index)
 													? 999
-													: testimonials.length + 2 - index,
+													: testimonialsData.length + 2 - index,
 												y: isActive(index) ? [0, -80, 0] : 0,
 											}}
 											exit={{
@@ -124,35 +137,37 @@ const AnimatedTestimonials = ({
 								}}
 							>
 								<h3 className="text-2xl font-bold-black text-slate-800">
-									{testimonials[active].name}
+									{testimonialsData[active].name}
 								</h3>
 								<p className="text-md text-gray-500">
-									{testimonials[active].designation}
+									{testimonialsData[active].designation}
 								</p>
 								<motion.p className="text-lg text-gray-500 mt-8">
-									{testimonials[active].quote.split(" ").map((word, index) => (
-										<motion.span
-											key={index}
-											initial={{
-												filter: "blur(10px)",
-												opacity: 0,
-												y: 5,
-											}}
-											animate={{
-												filter: "blur(0px)",
-												opacity: 1,
-												y: 0,
-											}}
-											transition={{
-												duration: 0.2,
-												ease: "easeInOut",
-												delay: 0.02 * index,
-											}}
-											className="inline-block"
-										>
-											{word}&nbsp;
-										</motion.span>
-									))}
+									{testimonialsData[active].quote
+										.split(" ")
+										.map((word, index) => (
+											<motion.span
+												key={index}
+												initial={{
+													filter: "blur(10px)",
+													opacity: 0,
+													y: 5,
+												}}
+												animate={{
+													filter: "blur(0px)",
+													opacity: 1,
+													y: 0,
+												}}
+												transition={{
+													duration: 0.2,
+													ease: "easeInOut",
+													delay: 0.02 * index,
+												}}
+												className="inline-block"
+											>
+												{word}&nbsp;
+											</motion.span>
+										))}
 								</motion.p>
 							</motion.div>
 
