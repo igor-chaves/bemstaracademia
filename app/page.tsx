@@ -11,23 +11,23 @@ export default function Home() {
 	const testimonialsData = [
 		{
 			quote:
-				"A natação me ajudou muito a melhorar minha resistência e a perder peso. Estou me sentindo muito mais saudável!",
-			name: "John Doe",
-			designation: "Aluno, Academia de Natação",
+				"A natação tem me feito muito bem! Sinto que meu condicionamento melhorou e, além disso, é um momento super relaxante do meu dia. A equipe é super profissional e me sinto segura desde o primeiro dia.",
+			name: "Marta Aparecida",
+			designation: "Aluna, Natação",
 			src: "/cliente1.avif",
 		},
 		{
 			quote:
-				"Os treinos são desafiadores, mas os resultados são incríveis! A evolução que tive é visível e me motiva cada vez mais.",
-			name: "Jane Smith",
-			designation: "Aluna, Academia de Natação",
+				"Comecei a hidroginástica por recomendação médica e estou amando! As aulas são animadas, os exercícios são leves e eficientes, e ainda faço amigos. Me sinto com muito mais disposição no dia a dia.",
+			name: "José Araújo",
+			designation: "Aluno, Hidronatação",
 			src: "/cliente2.avif",
 		},
 		{
 			quote:
-				"A experiência de treinar aqui tem sido fantástica. As aulas são muito bem estruturadas, e os instrutores são ótimos!",
-			name: "Alice Johnson",
-			designation: "Aluna, Academia de Natação",
+				"Fazer pilates aqui tem sido transformador! As aulas são dinâmicas, com exercícios que realmente ajudam na postura e nas dores do dia a dia. Os instrutores são atenciosos e sempre adaptam os movimentos pra cada aluno.",
+			name: "Sérgio dos Reis",
+			designation: "Aluno, Pilates",
 			src: "/cliente3.avif",
 		},
 	]
