@@ -40,7 +40,7 @@ const HealthBenefits = () => {
 					{repeatedBenefitsData.map(({ number, benefit, text }, index) => (
 						<div
 							key={index}
-							className={`md:max-w-sm border bg-white border-gray-200 rounded-lg shadow-lg p-4 min-h-[250px] flex flex-col justify-center mb-8 mx-2 item item${index}`}
+							className={`md:max-w-sm bg-white rounded-lg p-4 min-h-[250px] flex flex-col justify-center mb-8 mx-2 item item${index}`}
 						>
 							<div className="mb-4 md:flex md:w-72 w-56">
 								<p className="text-5xl font-semibold text-orange-600 md:mr-2">
