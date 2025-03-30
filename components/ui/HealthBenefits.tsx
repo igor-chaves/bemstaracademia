@@ -30,17 +30,17 @@ const HealthBenefits = () => {
 	const repeatedBenefitsData = [...benefitsData, ...benefitsData]
 
 	return (
-		<>
-			<h3 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold mb-2 pb-4">
+		<div>
+			<h3 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold mb-2 pb-4 max-w-[1280px] w-full mx-auto px-4">
 				Benefícios para o corpo
 			</h3>
 
-			<div className="relative overflow-x-hidden">
-				<div className="flex gap-4 animate-scroll wrapper">
+			<div className="relative overflow-x-hidden bg-orange-300">
+				<div className="flex gap-4 animate-scroll wrapper p-5">
 					{repeatedBenefitsData.map(({ number, benefit, text }, index) => (
 						<div
 							key={index}
-							className={`md:max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg p-4 min-h-[250px] flex flex-col justify-center mb-8 mx-2 item item${index}`}
+							className={`md:max-w-sm border bg-white border-gray-200 rounded-lg shadow-lg p-4 min-h-[250px] flex flex-col justify-center mb-8 mx-2 item item${index}`}
 						>
 							<div className="mb-4 md:flex md:w-72 w-56">
 								<p className="text-5xl font-semibold text-orange-600 md:mr-2">
@@ -55,7 +55,7 @@ const HealthBenefits = () => {
 					))}
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }
 

@@ -26,10 +26,8 @@ export default function Home() {
 
 				<AnimatedTestimonials />
 
-				<div className="max-w-[1280px] w-full mx-auto px-4">
-					<HealthBenefits />
-				</div>
-				
+				<HealthBenefits />
+
 				<Faq />
 
 				<div className="max-w-[1280px] w-full mx-auto px-4">
