@@ -29,9 +29,9 @@ const HeroImageSlide = () => {
 				</motion.p>
 				<Link
 					href="#contato"
-					className="sm:w-auto md:px-8 px-6 md:py-4 py-2 mt-6 text-sm sm:text-base md:text-lg font-medium tracking-wide text-gray-800 hover:text-white capitalize bg-orange-400 hover:bg-orange-300 rounded-md"
+					className="md:px-8 px-6 md:py-4 py-2 mt-6 text-sm sm:text-base md:text-lg font-medium tracking-wide text-gray-800 hover:text-white capitalize bg-orange-400 hover:bg-orange-300 rounded-md"
 				>
-					<span id="contact">Agende sua visita →</span>
+					<span>Agende sua visita →</span>
 				</Link>
 			</motion.div>
 		</ImagesSlider>

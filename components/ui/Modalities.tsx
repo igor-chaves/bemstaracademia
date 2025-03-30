@@ -6,7 +6,6 @@ const Modalities = () => {
 			title: "Natação",
 			src: "/natacao.avif",
 			items: [
-				"Melhora cardiorrespiratória",
 				"Fortalece todos os músculos",
 				"Baixo impacto nas articulações",
 				"Aumenta a resistência física",

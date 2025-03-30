@@ -6,6 +6,7 @@ import AnimatedTestimonials from "@/components/ui/Testimonials"
 import Contact from "@/components/ui/Contact"
 import Faq from "@/components/ui/Faq"
 import Footer from "@/components/ui/Footer"
+import HealthBenefits from "@/components/ui/HealthBenefits"
 
 export default function Home() {
 	return (
@@ -24,6 +25,11 @@ export default function Home() {
 				</div>
 
 				<AnimatedTestimonials />
+
+				<div className="max-w-[1280px] w-full mx-auto px-4">
+					<HealthBenefits />
+				</div>
+				
 				<Faq />
 
 				<div className="max-w-[1280px] w-full mx-auto px-4">
