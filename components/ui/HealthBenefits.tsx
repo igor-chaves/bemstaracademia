@@ -35,8 +35,8 @@ const HealthBenefits = () => {
 				Benefícios para o corpo
 			</h3>
 
-			<div className="relative overflow-x-hidden bg-orange-300">
-				<div className="flex gap-4 animate-scroll wrapper p-5">
+			<div className="relative overflow-x-hidden">
+				<div className="flex gap-4 animate-scroll wrapper p-5 bg-gray-300">
 					{repeatedBenefitsData.map(({ number, benefit, text }, index) => (
 						<div
 							key={index}
