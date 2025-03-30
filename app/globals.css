@@ -5,3 +5,65 @@
 html {
 	@apply scroll-smooth;
 }
+
+.wrapper {
+	/* width: 90%; */
+	/* max-width: 1536px; */
+	/* margin-inline: auto; */
+	/* position: relative; */
+	height: 300px;
+	overflow: hidden;
+	mask-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 1) 20%,
+		rgba(0, 0, 0, 1) 80%,
+		rgba(0, 0, 0, 0)
+	);
+}
+
+@keyframes scrollLeft {
+	to {
+		left: -1000px;
+	}
+}
+
+.item {
+	width: 330px;
+	/* height: 100px; */
+	/* border-radius: 6px; */
+	position: absolute;
+	left: max(calc(220px * 8), 100%);
+	animation-name: scrollLeft;
+	animation-duration: 40s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.item1 {
+	animation-delay: calc(40s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+	animation-delay: calc(40s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+	animation-delay: calc(40s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+	animation-delay: calc(40s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+	animation-delay: calc(40s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+	animation-delay: calc(40s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+	animation-delay: calc(40s / 8 * (8 - 7) * -1);
+}
