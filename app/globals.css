@@ -6,22 +6,6 @@ html {
 	@apply scroll-smooth;
 }
 
-.wrapper {
-	/* width: 90%; */
-	/* max-width: 1536px; */
-	/* margin-inline: auto; */
-	/* position: relative; */
-	height: 300px;
-	overflow: hidden;
-	mask-image: linear-gradient(
-		to right,
-		rgba(0, 0, 0, 0),
-		rgba(0, 0, 0, 1) 10%,
-		rgba(0, 0, 0, 1) 90%,
-		rgba(0, 0, 0, 0)
-	);
-}
-
 @keyframes scrollLeft {
 	to {
 		left: -1000px;

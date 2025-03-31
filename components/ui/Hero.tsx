@@ -6,6 +6,7 @@ import Link from "next/link"
 
 const HeroImageSlide = () => {
 	const images = ["/hero1.jpeg"]
+
 	return (
 		<ImagesSlider
 			className="h-[30rem] z-0 flex items-end pb-8"
@@ -21,15 +22,17 @@ const HeroImageSlide = () => {
 				<motion.p className="font-bold lg:text-7xl text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
 					{/* <motion.p className="font-bold lg:text-6xl md:text-4xl text-xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4"> */}
 					Conquiste cada braçada! <br />{" "}
-					<span className=" lg:text-8xl text-6xl text-transparent bg-clip-text bg-gradient-to-b from-orange-100 to-orange-400 font-bold">
+					<span className="lg:text-8xl text-6xl text-transparent bg-clip-text bg-gradient-to-b from-orange-100 to-orange-400 font-bold">
 						{/* <span className="lg:text-6xl md:text-4xl text-xl text-transparent bg-clip-text bg-gradient-to-b from-orange-100 to-orange-400 font-bold"> */}
 						Aprenda
 					</span>{" "}
-					com a gente
+					<span className="lg:text-7xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-300">
+						com a gente
+					</span>
 				</motion.p>
 				<Link
 					href="#contato"
-					className="md:px-8 px-6 md:py-4 py-2 mt-6 text-sm sm:text-base md:text-lg font-medium tracking-wide text-gray-800 hover:text-white capitalize bg-orange-400 hover:bg-orange-300 rounded-md"
+					className="px-8 py-4 mt-6 text-lg font-medium tracking-wide text-gray-800 hover:text-white capitalize bg-orange-400 hover:bg-orange-300 rounded-md"
 				>
 					<span>Agende sua visita →</span>
 				</Link>

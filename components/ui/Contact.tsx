@@ -50,12 +50,11 @@ const Contact = () => {
 			<div className="container flex flex-col px-1 py-12 mx-auto">
 				<div className="flex-1 lg:flex lg:items-center lg:-mx-6">
 					<div className="text-gray-400 lg:w-1/2 lg:mx-6 lg:pl-4">
-						{/* <h1 className="text-4xl font-semibold capitalize lg:text-5xl"> */}
-						<h1 className="lg:text-5xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-300 to-orange-400 font-bold pb-2">
+						<h3 className="lg:text-5xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-300 to-orange-400 font-bold pb-2">
 							Agende uma visita
-						</h1>
+						</h3>
 
-						<p className="max-w-xl mt-6">
+						<p className="max-w-xl md:mt-6">
 							Entre em contato e tire suas dúvidas
 						</p>
 
@@ -104,7 +103,7 @@ const Contact = () => {
 									/>
 								</svg>
 
-								<span className="mx-2 text-gray-500 truncate w-72">
+								<span className="mx-2 text-gray-500 truncate w-72 mb-4">
 									(35) 2146-4524 / (35) 99671-7275
 								</span>
 							</p>
@@ -131,7 +130,7 @@ const Contact = () => {
 							</p>
 						</div>
 
-						<div className="mt-6 md:mt-8">
+						<div className="md:mt-8 mt-16">
 							<h3 className="text-gray-400 ">Siga nos nas redes sociais</h3>
 
 							<div className="flex mt-4 -mx-1.5 ">

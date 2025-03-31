@@ -1,4 +1,4 @@
-const HealthBenefits = () => {
+const Benefits = () => {
 	const benefitsData = [
 		{
 			number: "-20%",
@@ -31,26 +31,34 @@ const HealthBenefits = () => {
 
 	return (
 		<div>
-			<h3 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold mb-2 pb-4 max-w-[1280px] w-full mx-auto px-4">
+			<h3 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold pb-4 flex align-middle justify-center ">
 				Benefícios para o corpo
 			</h3>
 
-			<div className="relative overflow-x-hidden">
-				<div className="flex gap-4 animate-scroll wrapper p-5 bg-gray-300">
+			<div className="relative overflow-x-hidden mt-8">
+				<div
+					className="flex gap-4 animate-scroll p-5 bg-gray-200 h-[250px] overflow-hidden"
+					style={{
+						maskImage:
+							"linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0))",
+						WebkitMaskImage:
+							"linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0))",
+					}}
+				>
 					{repeatedBenefitsData.map(({ number, benefit, text }, index) => (
 						<div
 							key={index}
-							className={`md:max-w-sm bg-white rounded-lg p-4 min-h-[250px] flex flex-col justify-center mb-8 mx-2 item item${index}`}
+							className={`md:max-w-sm bg-white rounded-lg p-4 min-h-[200px] flex flex-col justify-center mb-8 mx-2 item item${index}`}
 						>
 							<div className="mb-4 md:flex md:w-72 w-56">
-								<p className="text-5xl font-semibold text-orange-600 md:mr-2">
+								<p className="text-5xl font-semibold text-orange-500 md:mr-2">
 									{number}
 								</p>
 								<p className="text-slate-800 font-bold uppercase flex flex-col justify-end text-sm">
 									{benefit}
 								</p>
 							</div>
-							<span className="text-sm md:text-base text-gray-600">{text}</span>
+							<span className="text-sm md:text-base text-gray-500">{text}</span>
 						</div>
 					))}
 				</div>
@@ -59,4 +67,4 @@ const HealthBenefits = () => {
 	)
 }
 
-export default HealthBenefits
+export default Benefits

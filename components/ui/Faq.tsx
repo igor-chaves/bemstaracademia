@@ -50,15 +50,12 @@ const Faq2 = () => {
 
 	return (
 		<section className="bg-white">
-			<div
-				className="container max-w-4xl px-6 py-10 mx-auto scroll-mt-20"
-				id="faq"
-			>
-				<h3 className="text-3xl font-semibold text-center text-gray-800 lg:text-5xl ">
-					Perguntas <span className="text-orange-500">Frequentes</span>
+			<div className="max-w-4xl px-6 mx-auto scroll-mt-20" id="faq">
+				<h3 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold pb-4 flex align-middle justify-center">
+					Perguntas Frequentes
 				</h3>
 
-				<div className="mt-12 space-y-8">
+				<div className="mt-8 space-y-8">
 					{faqData.map((faq, index) => (
 						<div
 							key={index}

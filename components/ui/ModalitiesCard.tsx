@@ -62,14 +62,14 @@ const ModalitiesCard = ({ cards }: { cards: Card[] }) => {
 
 	return (
 		<div className="flex flex-col gap-5 m-4 scroll-mt-24" id="modalidades">
-			<h1 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold">
+			<h3 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold pb-4 flex align-middle justify-center ">
 				Modalidades
-			</h1>
+			</h3>
 
 			<div className="grid gap-4 md:gap-12 grid-cols-2 lg:grid-cols-4">
 				{cards.map((card, index) => (
 					<div key={index}>
-						<div className="md:text-3xl text-1xl pb-3 text-gray-700">
+						<div className="md:text-3xl text-1xl pb-3 text-gray-600">
 							<span>{card.title}</span>
 						</div>
 						<Card
