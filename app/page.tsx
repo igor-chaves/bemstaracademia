@@ -7,7 +7,7 @@ import Contact from "@/components/ui/Contact"
 import Faq from "@/components/ui/Faq"
 import Footer from "@/components/ui/Footer"
 import Benefits from "@/components/ui/Benefits"
-import MiniSentence from "@/components/ui/MiniSentence"
+import Parallax from "@/components/ui/Parallax"
 
 export default function Home() {
 	return (
@@ -26,7 +26,7 @@ export default function Home() {
 				</div>
 
 				<div className="w-full">
-					<MiniSentence />
+					<Parallax />
 				</div>
 
 				<AnimatedTestimonials />
