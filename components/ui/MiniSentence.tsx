@@ -1,15 +1,12 @@
 const MiniSentence = () => {
 	return (
-		<div className="w-full mx-auto px-4 bg-gray-300 h-[300px] flex align-middle justify-center flex-col">
-			<div className="flex align-middle justify-center">
-				<blockquote className="relative w-[500px] px-10 py-2 my-1 text-lg italic font-serif leading-relaxed text-gray-800 flex flex-col justify-center align-middle">
-					<span className="absolute text-[80px] text-gray-500 -left-5 -top-5">
+		<div className="w-full h-[400px] flex items-center justify-center relative bg-[url('/parallax.avif')] bg-cover bg-center bg-fixed">
+			<div className="relative bg-white/50 p-5 rounded-lg m-8">
+				<blockquote className="relative max-w-[500px] px-10 py-2 my-1 text-2xl italic font-serif leading-relaxed text-slate-800 flex flex-col justify-center items-center text-center">
+					<span className="absolute text-[80px] text-orange-600 -left-5 -top-11">
 						“
 					</span>
-					Movimente-se, supere limites e conquiste o seu bem-estar!
-					<cite className="block mt-1 text-sm text-gray-500 before:content-['—\00A0']">
-						Autor desconhecido
-					</cite>
+					<p>Movimente-se, supere limites e conquiste o seu bem-estar!</p>
 				</blockquote>
 			</div>
 		</div>
