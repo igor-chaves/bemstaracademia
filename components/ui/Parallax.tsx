@@ -6,7 +6,7 @@ const Parallax = () => {
 					<span className="absolute text-[80px] text-orange-600 -left-5 -top-11">
 						“
 					</span>
-					<p>Movimente-se, supere limites e conquiste o seu bem-estar!</p>
+					<p className="md:text-3xl text-xl">Movimente-se, supere limites e conquiste o seu bem-estar!</p>
 				</blockquote>
 			</div>
 		</div>
