@@ -1,9 +1,9 @@
 "use client"
 
 import Image from "next/image"
-import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react"
-import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
+import { ButtonsBackForward } from "@/utils/buttons"
+import { motion, AnimatePresence } from "framer-motion"
 
 const testimonialsData = [
 	{
@@ -33,19 +33,10 @@ const AnimatedTestimonials = ({ autoplay = false }: { autoplay?: boolean }) => {
 	const [active, setActive] = useState(0)
 	const [randomRotation, setRandomRotation] = useState<number | null>(null) // estado para armazenar a rotação aleatória
 
-	const handleNext = () => {
-		setActive((prev) => (prev + 1) % testimonialsData.length)
-	}
+	const handleNext = () => setActive((prev) => (prev + 1) % testimonialsData.length)
+	const handlePrev = () => setActive((prev) => (prev - 1 + testimonialsData.length) % testimonialsData.length)
 
-	const handlePrev = () => {
-		setActive(
-			(prev) => (prev - 1 + testimonialsData.length) % testimonialsData.length
-		)
-	}
-
-	const isActive = (index: number) => {
-		return index === active
-	}
+	const isActive = (index: number) => index === active
 
 	// Gerar rotação aleatória apenas no cliente (dentro de useEffect)
 	useEffect(() => {
@@ -65,6 +56,7 @@ const AnimatedTestimonials = ({ autoplay = false }: { autoplay?: boolean }) => {
 			<h3 className="lg:text-7xl md:text-6xl text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-200 to-orange-400 font-bold pb-4 flex align-middle justify-center ">
 				Testemunhos
 			</h3>
+
 			<div className="w-full mx-auto antialiased font-sans px-6 lg:pb-20 md:px-8 md:py-16 lg:px-12 pt-20 pb-12 mt-8 bg-gray-200 ">
 				<div className="max-w-[1280px] mx-auto lg:px-4">
 					<div className="relative grid md:grid-cols-2 gap-10 grid-cols-1">
@@ -172,18 +164,8 @@ const AnimatedTestimonials = ({ autoplay = false }: { autoplay?: boolean }) => {
 							</motion.div>
 
 							<div className="flex gap-4 pt-12 md:pt-0 lg:mt-0 md:mt-4">
-								<button
-									onClick={handlePrev}
-									className="h-7 w-7 rounded-full bg-gray-100 flex items-center justify-center group/button"
-								>
-									<IconArrowLeft className="h-5 w-5 text-orange-400 group-hover/button:rotate-12 transition-transform duration-300" />
-								</button>
-								<button
-									onClick={handleNext}
-									className="h-7 w-7 rounded-full bg-gray-100 flex items-center justify-center group/button"
-								>
-									<IconArrowRight className="h-5 w-5 text-orange-400 group-hover/button:-rotate-12 transition-transform duration-300" />
-								</button>
+								<ButtonsBackForward direction="next" setActive={handleNext} />
+								<ButtonsBackForward direction="prev" setActive={handlePrev} />
 							</div>
 						</div>
 					</div>

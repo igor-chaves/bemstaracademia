@@ -136,6 +136,7 @@ export const ImagesSlider = ({
 			{areImagesLoaded && (
 				<AnimatePresence>
 					<motion.img
+						alt="hero-image"
 						key={currentIndex}
 						src={loadedImages[currentIndex]}
 						initial="initial"
