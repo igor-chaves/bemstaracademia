@@ -29,27 +29,25 @@ const testimonialsData = [
 	},
 ]
 
-const AnimatedTestimonials = ({ autoplay = false }: { autoplay?: boolean }) => {
+const AnimatedTestimonials = () => {
 	const [active, setActive] = useState(0)
-	const [randomRotation, setRandomRotation] = useState<number | null>(null) // estado para armazenar a rotação aleatória
-
-	const handleNext = () => setActive((prev) => (prev + 1) % testimonialsData.length)
-	const handlePrev = () => setActive((prev) => (prev - 1 + testimonialsData.length) % testimonialsData.length)
+	const [randomRotation, setRandomRotation] = useState<number | null>(null)
 
 	const isActive = (index: number) => index === active
 
-	// Gerar rotação aleatória apenas no cliente (dentro de useEffect)
+	const handleNext = () =>
+		setActive((prev) => (prev + 1) % testimonialsData.length)
+
+	const handlePrev = () =>
+		setActive(
+			(prev) => (prev - 1 + testimonialsData.length) % testimonialsData.length
+		)
+
+	// Gera inclinação aleatória do card com fotos dos clientes
 	useEffect(() => {
 		const randomRotateY = Math.floor(Math.random() * 21) - 10
-		setRandomRotation(randomRotateY) // atualiza o estado com o valor aleatório
+		setRandomRotation(randomRotateY)
 	}, [])
-
-	useEffect(() => {
-		if (autoplay) {
-			const interval = setInterval(handleNext, 5000)
-			return () => clearInterval(interval)
-		}
-	}, [autoplay])
 
 	return (
 		<div className="w-full scroll-m-20" id="testemunhos">
@@ -111,22 +109,10 @@ const AnimatedTestimonials = ({ autoplay = false }: { autoplay?: boolean }) => {
 						<div className="flex justify-between flex-col py-4">
 							<motion.div
 								key={active}
-								initial={{
-									y: 20,
-									opacity: 0,
-								}}
-								animate={{
-									y: 0,
-									opacity: 1,
-								}}
-								exit={{
-									y: -20,
-									opacity: 0,
-								}}
-								transition={{
-									duration: 0.2,
-									ease: "easeInOut",
-								}}
+								initial={{ y: 20, opacity: 0 }}
+								animate={{ y: 0, opacity: 1 }}
+								exit={{ y: -20, opacity: 0 }}
+								transition={{ duration: 0.2, ease: "easeInOut" }}
 							>
 								<h3 className="text-2xl font-bold-black text-slate-800">
 									{testimonialsData[active].name}
@@ -140,16 +126,8 @@ const AnimatedTestimonials = ({ autoplay = false }: { autoplay?: boolean }) => {
 										.map((word, index) => (
 											<motion.span
 												key={index}
-												initial={{
-													filter: "blur(10px)",
-													opacity: 0,
-													y: 5,
-												}}
-												animate={{
-													filter: "blur(0px)",
-													opacity: 1,
-													y: 0,
-												}}
+												initial={{ filter: "blur(10px)", opacity: 0, y: 5 }}
+												animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
 												transition={{
 													duration: 0.2,
 													ease: "easeInOut",
