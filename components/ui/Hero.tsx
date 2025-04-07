@@ -3,6 +3,7 @@ import React from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ImagesSlider } from "./images-slider"
+import { ButtonCTA } from "@/utils/buttons"
 
 const HeroImageSlide = () => {
 	const images = ["/hero1.jpeg"]
@@ -24,12 +25,21 @@ const HeroImageSlide = () => {
 						com a gente
 					</span>
 				</motion.p>
-				<Link
+
+				{/* <Link
 					href="#contato"
 					className="px-8 py-4 mt-6 text-lg font-medium tracking-wide text-gray-800 hover:text-white capitalize bg-orange-400 hover:bg-orange-300 rounded-md"
 				>
 					<span>Agende sua visita →</span>
-				</Link>
+				</Link> */}
+
+
+				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
+				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
+				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
+				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
+				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
+				<ButtonCTA extraClassName="w-full">Agende sua visita</ButtonCTA>
 			</motion.div>
 		</ImagesSlider>
 	)

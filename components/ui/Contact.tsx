@@ -1,3 +1,5 @@
+import { ButtonCTA } from "@/utils/buttons"
+
 const Contact = () => {
 	const inputsProps = [
 		{
@@ -219,9 +221,10 @@ const Contact = () => {
 							<form className="mt-4">
 								<Inputs />
 
-								<button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-orange-300 rounded-md hover:bg-orange-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+								{/* <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-orange-300 rounded-md hover:bg-orange-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
 									Envie sua mensagem
-								</button>
+								</button> */}
+								<ButtonCTA>Envia sua mensagem</ButtonCTA>
 							</form>
 						</div>
 					</div>
