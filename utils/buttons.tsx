@@ -24,22 +24,23 @@ const ButtonsBackForward = ({
 	)
 }
 
+{
+	/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */
+}
+{
+	/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */
+}
 
-				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
-				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
-				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
-				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
-				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
 const ButtonCTA = ({
 	children,
-	extraClassName,
+	className,
 }: {
 	children: ReactNode
-	extraClassName?: string
+	className?: string
 }) => {
 	return (
 		<button
-			className={`${extraClassName} px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-orange-300 rounded-md hover:bg-orange-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50}`}
+			className={`${className} px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-orange-300 rounded-md hover:bg-orange-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50}`}
 		>
 			{children}
 		</button>

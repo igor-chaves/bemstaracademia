@@ -1,6 +1,5 @@
 "use client"
 import React from "react"
-import Link from "next/link"
 import { motion } from "framer-motion"
 import { ImagesSlider } from "./images-slider"
 import { ButtonCTA } from "@/utils/buttons"
@@ -33,13 +32,12 @@ const HeroImageSlide = () => {
 					<span>Agende sua visita →</span>
 				</Link> */}
 
-
 				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
 				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
 				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
 				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
 				{/* TENHO QUE FAZER UM COMPONENTE GENERICO QUE TBM RECEBA LARGURA SE FOR NECESSARIO */}
-				<ButtonCTA extraClassName="w-full">Agende sua visita</ButtonCTA>
+				<ButtonCTA>Agende sua visita</ButtonCTA>
 			</motion.div>
 		</ImagesSlider>
 	)
