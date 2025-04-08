@@ -184,6 +184,7 @@ const AnimatedTestimonials = ({ autoplay = false }: { autoplay?: boolean }) => {
 								>
 									<IconArrowRight className="h-5 w-5 text-orange-400 group-hover/button:-rotate-12 transition-transform duration-300" />
 								</button>
+									<IconArrowRight className="h-5 w-5 text-orange-400 group-hover/button:-rotate-12 transition-transform duration-300" />
 							</div>
 						</div>
 					</div>
