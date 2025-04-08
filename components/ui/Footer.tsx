@@ -14,7 +14,6 @@ const Footer = () => {
 		{ link: "Perguntas Frequentes", href: "#faq" },
 		{ link: "Contato", href: "#contato" },
 		{ link: "Acesso", href: "#acesso" },
-		{ link: "Acesso", href: "#acesso" },
 	]
 
 	return (
