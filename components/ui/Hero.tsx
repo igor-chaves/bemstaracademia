@@ -25,7 +25,7 @@ const HeroImageSlide = () => {
 					</span>
 				</motion.p>
 
-				<ButtonCTA>Agende sua visita</ButtonCTA>
+				<ButtonCTA className="text-black">Agende sua visita</ButtonCTA>
 			</motion.div>
 		</ImagesSlider>
 	)
