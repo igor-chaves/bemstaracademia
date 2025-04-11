@@ -34,12 +34,10 @@ const ButtonCTA = ({
 }) => {
 	const btnClass =
 		"px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-orange-300 rounded-md hover:bg-orange-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50"
-	// return <button className={`${btnClass} ${className}`}>{children}</button>
+
 	return (
 		<Link href="#contato">
-			<button className="px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-orange-300 rounded-md hover:bg-orange-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
-				{children}
-			</button>
+			<button className={`${btnClass} ${className}`}>{children}</button>
 		</Link>
 	)
 }
