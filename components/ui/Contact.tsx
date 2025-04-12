@@ -218,9 +218,10 @@ const Contact = () => {
 								Formulário de contato
 							</h1>
 
-							<form className="mt-4">
+							<form className="mt-4" action="/search">
 								<Inputs />
 								<ButtonCTA className="w-full">Envia sua mensagem</ButtonCTA>
+								<button>ENVIAR</button>
 							</form>
 						</div>
 					</div>
