@@ -221,7 +221,7 @@ const Contact = () => {
 							<form className="mt-4" action="/search">
 								<Inputs />
 								<ButtonCTA className="w-full">Envia sua mensagem</ButtonCTA>
-								<button>ENVIAR</button>
+								{/* <button>ENVIAR</button> */}
 							</form>
 						</div>
 					</div>
