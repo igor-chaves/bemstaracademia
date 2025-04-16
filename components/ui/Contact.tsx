@@ -1,18 +1,21 @@
-import { ButtonCTA } from "@/utils/buttons"
+import { submitContactForm } from "@/utils/actions"
 
 const Contact = () => {
 	const inputsProps = [
 		{
+			name: "nome",
 			tag: "input",
 			title: "Nome",
 			placeholder: "Seu nome aqui",
 		},
 		{
+			name: "email",
 			tag: "input",
 			title: "Email",
 			placeholder: "seu_email@exemplo.com",
 		},
 		{
+			name: "message",
 			tag: "textarea",
 			title: "Mensagem",
 			placeholder: "Sua mensagem aqui",
@@ -22,7 +25,7 @@ const Contact = () => {
 	const Inputs = () => {
 		return (
 			<>
-				{inputsProps.map(({ title, placeholder, tag }, index) => {
+				{inputsProps.map(({ title, placeholder, tag, name }, index) => {
 					return (
 						<div className="flex-1 mt-6" key={index}>
 							<label className="block mb-2 text-sm text-gray-500">
@@ -31,11 +34,13 @@ const Contact = () => {
 							{tag === "input" ? (
 								<input
 									type="text"
+									name={name}
 									placeholder={placeholder}
 									className="block w-full px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 focus:outline-none focus:ring placeholder:font-inter"
 								/>
 							) : (
 								<textarea
+									name={name}
 									className="block w-full h-32 px-5 py-3 mt-2 text-gray-400 border border-gray-400 rounded-md bg-white focus:border-orange-500 focus:ring-orange-500 focus:ring-opacity-40 focus:outline-none focus:ring placeholder:font-inter"
 									placeholder={placeholder}
 								></textarea>
@@ -218,12 +223,15 @@ const Contact = () => {
 								Formulário de contato
 							</h1>
 
-							<form className="mt-4" action="/search">
+							<form className="mt-4" action={submitContactForm}>
 								<Inputs />
-								<ButtonCTA className="w-full">Envia sua mensagem</ButtonCTA>
-								<ButtonCTA className="w-full">Envia sua mensagem</ButtonCTA>
-								<ButtonCTA className="w-full">Envia sua mensagem</ButtonCTA>
-								<button>ENVIAR</button>
+								{/* <ButtonCTA className="w-full">Envia sua mensagem</ButtonCTA> */}
+								<button
+									type="submit"
+									className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-black capitalize transition-colors duration-300 transform bg-orange-300 rounded-md hover:bg-orange-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50"
+								>
+									Enviar sua mensagem
+								</button>
 							</form>
 						</div>
 					</div>
