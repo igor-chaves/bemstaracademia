@@ -2,7 +2,7 @@
 
 import { RegisterFormSchema } from "./rules"
 
-export async function register(state: string, formData: FormData) {
+export async function register(state: any, formData: FormData) {
 	const validatedFields = RegisterFormSchema.safeParse({
 		email: formData.get("email"),
 		password: formData.get("password"),
@@ -12,7 +12,7 @@ export async function register(state: string, formData: FormData) {
 	if (!validatedFields.success) {
 		return {
 			errors: validatedFields.error.flatten().fieldErrors,
-			email: formData.get("email")
+			email: formData.get("email"),
 		}
 	}
 
