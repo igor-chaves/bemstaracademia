@@ -37,9 +37,9 @@ export default function Register() {
 							<div className="error">
 								<p>A senha deve</p>
 								<ul className="list-disc list-inside ml-4">
-									{state.errors.password.map((err) => (
+									{/* {state.errors.password.map((err) => (
 										<li key={err}>{err}</li>
-									))}
+									))} */}
 								</ul>
 							</div>
 						)}
