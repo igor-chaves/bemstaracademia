@@ -3,8 +3,26 @@
 import { register } from "@/lib/auth"
 import { useActionState } from "react"
 
+type FormState = {
+	errors?: {
+		email?: string
+		password?: string[]
+		confirmPassword?: string
+	}
+	message?: string
+}
+
+type FormData = {
+	email: string
+	password: string
+	confirmPassword: string
+}
+
 export default function Register() {
-	const [state, action, isPendig] = useActionState(register, undefined)
+	const [state, action, isPendig] = useActionState<FormState, FormData>(
+		register,
+		undefined
+	)
 
 	const classLabel = "block text-sm font-medium text-gray-700 mb-2"
 	const classInput =
@@ -33,13 +51,13 @@ export default function Register() {
 							Senha
 						</label>
 						<input type="password" name="password" className={classInput} />
-						{state?.errors?.email && (
+						{state?.errors?.password && (
 							<div className="error">
 								<p>A senha deve</p>
 								<ul className="list-disc list-inside ml-4">
-									{/* {state.errors.password.map((err) => (
+									{state.errors.password.map((err) => (
 										<li key={err}>{err}</li>
-									))} */}
+									))}
 								</ul>
 							</div>
 						)}
