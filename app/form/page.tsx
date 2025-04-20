@@ -90,18 +90,15 @@ export default function Register() {
 }
 
 {
-	/* <div className="mb-6">
-						<label
-							htmlFor="message"
-							className={classLabel}
-						>
-							Message
-						</label>
-						<textarea
-							name="message"
-							placeholder="Type your message here"
-							rows={5}
-							className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-						></textarea>
-					</div> */
+	<div className="mb-6">
+		<label htmlFor="message" className={classLabel}>
+			Message
+		</label>
+		<textarea
+			name="message"
+			placeholder="Type your message here"
+			rows={5}
+			className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+		></textarea>
+	</div>
 }
